@@ -43,7 +43,10 @@ const Navbar = () => {
             <div className="navbar-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        <img src={userDefault} />
+                        {
+                            user ? <img src="https://th.bing.com/th/id/R.62904db9e97099ba9defaefcd7484706?rik=qUmpvCVK5LE7fw&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2017%2f01%2fMonkey-full-HD.jpg&ehk=cRfP3iLrsoM654x5sjBA1BP4LAfw0w2iVGajyz%2b3MQo%3d&risl=&pid=ImgRaw&r=0" />
+                            : <img src={userDefault}></img>
+                        }
                     </div>
                 </label>
                 {
